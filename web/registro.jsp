@@ -4,6 +4,7 @@
     Author     : windows
 --%>
 
+<%@page import="Model.Conexion"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,7 +18,12 @@
     <title>Registro</title>
 </head>
     <body>
+        <%
+            Conexion con = new Conexion();
+            String dat = con.consume();
+            %>
         <h1>Hello World!</h1>
+        <p> <%= dat.toString() %> </p>
         <a href="controlador?accion=index">Regresar</a>
     </body>
 </html>
