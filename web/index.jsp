@@ -4,6 +4,8 @@
     Author     : windows
 --%>
 
+
+<%@page import="java.awt.Container"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +21,7 @@
 <body style="background-color: black;">
     
     <div class="divFormulario">
-    <form class="formularioLogin" method="POST" action="index.php">
+    <form class="formularioLogin" method="POST" action="controlador?accion=login">
         <div class="divAvatarLogin">
             <img src="img/login.png" alt="jf" class="avatarLogin" >
         </div>
@@ -28,8 +30,8 @@
         <input type="text" class="form-control" name="usuario" id="usuario">
       </div>
       <div class="mb-3">
-        <label for="contraseña" class="form-label" style="color: rgb(124, 248, 227);">Contraseña</label>
-        <input type="password" class="form-control" name="contraseña" id="contraseña">
+        <label for="contrasenia" class="form-label" style="color: rgb(124, 248, 227);">Contraseña</label>
+        <input type="password" class="form-control" name="contrasenia" id="contrasenia">
       </div>
     
     <div style="text-align: center;">
@@ -37,7 +39,7 @@
     </div>
 
     <div style="text-align: center;">
-        <a href="registro.jsp">Registrarse</a>
+        <a href="controlador?accion=registro">Registrarse</a>
     </div>
     </form
     </div>
