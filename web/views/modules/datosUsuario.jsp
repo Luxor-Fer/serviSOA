@@ -23,7 +23,7 @@
         <%
             HttpSession nombre = (HttpSession) request.getSession();
             Usuarios usu = (Usuarios) nombre.getAttribute("usuario");
-            String tip = ((Object) nombre.getAttribute("usuario")).getClass().getSimpleName();
+            //String tip = ((Object) nombre.getAttribute("usuario")).getClass().getSimpleName();
         %>
 
 
